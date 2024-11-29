@@ -1,0 +1,28 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.nav-link {
+    font-weight: 600;
+}
+html {
+    scroll-behavior: smooth;
+  }
+/* เพิ่ม animation ให้กับรูปภาพ */
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0); /* เริ่มต้นที่ตำแหน่งเดิม */
+    }
+    50% {
+      transform: translateY(-10px); /* ขยับขึ้น */
+    }
+    100% {
+      transform: translateY(0); /* กลับไปที่ตำแหน่งเดิม */
+    }
+  }
+  
+  /* นำ animation มาใช้กับรูปภาพ */
+  img {
+    animation: moveUpDown 2s ease-in-out infinite; /* ใช้ animation กับรูปภาพ, 2s คือระยะเวลา, infinite คือวนลูปไปเรื่อยๆ */
+  }
+  
+  
